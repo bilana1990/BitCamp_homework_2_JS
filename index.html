@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcamp დავალება-2</title>
+  </head>
+  <body>
+    <style>
+      body {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+        padding-top: 100px;
+      }
+    </style>
+    <script>
+      // დაწერეთ პროგრამა, რათა შეამოწმოთ რიცხვი ლუწია თუ კენტი.
+      let isNumber = Number(prompt(" შეამოწმეთ რიცხვი ლუწია თუ კენტი"));
+      if (isNumber % 2 == 0) {
+        document.write(isNumber + " is even." + "<br>");
+      } else {
+        document.write(isNumber + " is odd." + "<br>");
+      }
+
+      //   დაწერეთ პროგრამა, რათა შეამოწმოთ რიცხვი დადებითია, უარყოფითი თუ ნული.
+      let isNumber1 = Number(prompt("შეამოწმოთ რიცხვი დადებითია, უარყოფითი თუ ნული"));
+      if (isNumber1 > 0) {
+        document.write(isNumber1 + " თქვენი ციფრი დადებითია. " + "<br>");
+      } 
+      if(isNumber1==0){
+        document.write(isNumber1 + " თქვენი ციფრია ნოლი. " + "<br>");
+      }
+      else {
+        document.write(isNumber1 + " თქვენი ციფრი უარყოფითია. " + "<br>");
+      }
+
+      //დაწერეთ პროგრამა, რათა შეამოწმოთ არის თუ არა რიცხვი გასაყოფი სხვა რიცხვზე.
+      let isNumber2 = Number(prompt("შეამოწმოთ არის თუ არა რიცხვი გასაყოფი სხვა რიცხვზე"));
+      if (isNumber2 % 2 == 0) {
+        document.write(isNumber2 + " თქვები ციფრი იყოფა უნაშთოდ." + "<br>");
+      } else {
+        document.write(isNumber2 + " თქვენი ციფრი არ იყოფა უნაშთოდ." + "<br>");
+      }
+
+      //   დაწერეთ პროგრამა, რათა შეამოწმოთ სტრიქონი ცარიელია თუ არა.
+      function isEmptyString(str) {
+        // შეამოწმებს, თუ სტრიქონი ცარიელია
+        return str.trim() === "";
+      }
+
+      // მაგალითისთვის
+      var exampleString = "   "; // ცარიელი სტრიქონი
+
+      if (isEmptyString(exampleString)) {
+        document.write("სტრიქონი ცარიელია" + "<br>");
+      } else {
+        document.write("სტრიქონი არ არის ცარიელი");
+      }
+
+      //   დაწერეთ პროგრამა, რათა შეამოწმოთ, შეიცავს თუ არა სტრიქონი კონკრეტულ სიტყვას.
+      function isEmptyString(str) {
+        // შეამოწმებს, თუ სტრიქონი ცარიელია
+        return str.trim() === "";
+      }
+
+      // მაგალითისთვის
+      var exampleString = " gio bilana  "; // ცარიელი სტრიქონი
+
+      if (isEmptyString(exampleString)) {
+        document.write("სტრიქონი ცარიელია");
+      } else {
+        document.write(
+          "სტრიქონი არ არის ცარიელი, სტრიქონში წერია gio bilana" + "<br>"
+        );
+      }
+
+      // დაწერეთ პროგრამა, რომ იპოვოთ მინიმალური ორი რიცხვიდან.
+      function findMin(a, b) {
+        return Math.min(a, b);
+      }
+
+      var number1 = prompt("მინიმალური ორი რიცხვიდან I");
+      var number2 = prompt("მინიმალური ორი რიცხვიდან II");
+
+      document.write("ორი რიცხვიდან მინიმუმი არის: " + findMin(number1, number2));
+    </script>
+  </body>
+</html>
